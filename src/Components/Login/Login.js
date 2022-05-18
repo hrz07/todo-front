@@ -14,9 +14,9 @@ const Login = () => {
 
 
     return (
-        <div className='mt-5'>
+        <div className='mt-5 w-50 mx-auto align-items-center text-center'>
             <h2 className='fw-bold text-dark'>Please Login To Create A Todo</h2>
-            <button onClick={()=>signInWithGoogle()} className='btn btn-warning mt-4'>Continue with google</button>
+            <button onClick={()=>signInWithGoogle()} className='btn btn-warning mx-auto mt-4'>Continue with google</button>
         </div>
     );
 };

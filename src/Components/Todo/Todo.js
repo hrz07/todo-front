@@ -29,7 +29,7 @@ const Todo = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        fetch('http://localhost:5000/todo', {
+        fetch('https://safe-cliffs-08325.herokuapp.com/todo', {
             method: 'POST', // or 'PUT'
             headers: {
                 'Content-Type': 'application/json',
@@ -37,14 +37,14 @@ const Todo = () => {
             body: JSON.stringify({ todoData }),
         })
             .then(res => res.json())
-            .then(data => alert('successfuly data added'))
+            .then(data => toast('successfuly todo added'))
 
         e.target.reset();
 
     }
 
     const deleteTodo = (id) => {
-        fetch(`http://localhost:5000/todo/${id}`, {
+        fetch(`https://safe-cliffs-08325.herokuapp.com/todo/${id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())
