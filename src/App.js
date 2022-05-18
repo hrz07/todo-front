@@ -8,7 +8,7 @@ import RequireAuth from './Components/RequreAuth';
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <Navbar></Navbar>
       <Routes>
         <Route path='/todo' element={
